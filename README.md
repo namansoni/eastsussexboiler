@@ -1,6 +1,6 @@
 # eastsussexboilers
 
-A new Flutter project.
+East Sussex Boilers.
 
 ## Getting Started
 
