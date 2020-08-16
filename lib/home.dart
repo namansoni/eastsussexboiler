@@ -1,6 +1,6 @@
-import 'dart:async';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:io';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -30,10 +30,12 @@ class _HomeState extends State<Home> {
             isLoaded
                 ? SizedBox()
                 : Center(
-                    child: SpinKitCubeGrid(
-                      color: ThemeData.dark().accentColor,
-                      duration: Duration(seconds: 1),
-                    ),
+                    child: Platform.isIOS
+                        ? CupertinoActivityIndicator()
+                        : SpinKitCubeGrid(
+                            color: ThemeData.dark().accentColor,
+                            duration: Duration(seconds: 1),
+                          ),
                   )
           ],
         ),
