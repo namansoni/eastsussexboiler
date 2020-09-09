@@ -1,4 +1,4 @@
-package com.example.eastsussexboilers;
+package com.eastsussexboilers.app;
 
 import io.flutter.embedding.android.FlutterActivity;
 
